@@ -2,7 +2,7 @@ SRC_DIR := src
 OBJ_DIR := obj
 BIN_DIR := bin
 
-EXE_GAME := $(BIN_DIR)/perceval
+EXE_GAME := $(BIN_DIR)/RISK
 ALL_EXE  := $(EXE_GAME)
 SRC := $(wildcard $(SRC_DIR)/*.c)
 OBJ := $(SRC:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
