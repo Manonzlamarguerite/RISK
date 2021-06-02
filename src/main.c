@@ -2,8 +2,8 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <MLV/MLV_all.h>
 
 int main(){
-  printf("bonjour je suis manonz\n");
   exit(0);
 }
