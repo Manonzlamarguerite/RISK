@@ -18,18 +18,18 @@ LDLIBS   := -lm `pkg-config --libs-only-l MLV`
 all: $(ALL_EXE)
 
 $(EXE_GAME): $(OBJ) | $(BIN_DIR)
-    $(CC) $(LDFLAGS) $^ $(LDLIBS) -o $@
+		$(CC) $(LDFLAGS) $^ $(LDLIBS) -o $@
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJ_DIR)
-    $(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
+		$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
 
 $(BIN_DIR) $(OBJ_DIR):
-    mkdir -p $@
+		mkdir -p $@
 
 clean:
-    @$(RM) -rv $(OBJ_DIR)
+		@$(RM) -rv $(OBJ_DIR)
 
 clean_all:
-    @$(RM) -rv $(BIN_DIR) $(OBJ_DIR)
+		@$(RM) -rv $(BIN_DIR) $(OBJ_DIR)
 
 -include $(OBJ:.o=.d)
