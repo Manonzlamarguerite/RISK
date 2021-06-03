@@ -389,6 +389,7 @@ void affichage_bandeau_droite(int terr1,
   MLV_draw_text_with_font(820,400,"CONTINENTS : ...",font,MLV_COLOR_GREEN,cont1);
   MLV_draw_text_with_font(820,420,"TROUPES : 40", font, MLV_COLOR_GREEN,trp1);
 
+  font = MLV_load_font("./ressources/fonts/gunplay.ttf", 24);
   if(tour == 0){
     MLV_draw_text_with_font(840,500,"TOUR : J1",font,MLV_COLOR_ORANGE,terr1);
   }
@@ -407,27 +408,7 @@ void init_graphisme(){
   // Création de la fenêtre
   MLV_create_window("RISK", "RISK", 1000, 600);
 
-  int i;
-
   // Arrière plan
   MLV_Image *img = MLV_load_image("./ressources/img/world.png");
   MLV_draw_image(img, 0, 0);
-
-  for(i = 0; i < 42; i++){
-    color_pays(i, 1);
-  }
-  MLV_actualise_window();
-  MLV_wait_seconds(2);
-
-  for(i = 0; i < 42; i++){
-    color_pays(i, 0);
-  }
-  MLV_actualise_window();
-  MLV_wait_seconds(2);
-
-  for(i = 0; i < 42; i++){
-    color_pays(i, -1);
-  }
-  MLV_actualise_window();
-  MLV_wait_seconds(2);
 }
