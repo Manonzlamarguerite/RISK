@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "renfort_phase1.h"
 #include "liste.h"
-##include "tla.h"
+#include "tla.h"
 #define NB_TERRITOIRE 42
 
 int calc_nb_territoire(int joueur, liste_territoires territoire){
@@ -19,7 +19,7 @@ int calc_nb_territoire(int joueur, liste_territoires territoire){
 }
 
 int nb_contient(int joueur, liste_territoires territoire){
-  int nb_contient;
+  int nb_continent;
   int oceanie, asie, amerique_sud, amerique_nord,afrique, europe;
   oceanie=0;
   asie=0;
@@ -82,6 +82,8 @@ int nb_contient(int joueur, liste_territoires territoire){
   if(asie==12){
     nb_contient +=1;
   }
+
+  return nb_continent;
 }
 
 int calc_nb_troupe(int joueur, liste_territoires territoire, liste_voisin tla){
