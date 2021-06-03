@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "renfort_phase1.h"
+#include "liste.h"
+##include "tla.h"
 #define NB_TERRITOIRE 42
 
 int calc_nb_territoire(int joueur, liste_territoires territoire){
