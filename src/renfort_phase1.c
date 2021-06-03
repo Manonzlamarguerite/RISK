@@ -18,8 +18,8 @@ int calc_nb_territoire(int joueur, liste_territoires territoire){
   return nb_territoire;
 }
 
-int nb_contient(int joueur, liste_territoires territoire){
-  int nb_continent;
+int nb_continent(int joueur, liste_territoires territoire){
+  int nb_continent,i;
   int oceanie, asie, amerique_sud, amerique_nord,afrique, europe;
   oceanie=0;
   asie=0;
@@ -35,7 +35,7 @@ int nb_contient(int joueur, liste_territoires territoire){
     }
   }
   if(oceanie==4){
-    nb_contient+=1;
+    nb_continent+=1;
   }
 
   for(i=9;i<13;i++){
@@ -44,7 +44,7 @@ int nb_contient(int joueur, liste_territoires territoire){
     }
   }
   if(amerique_sud==4){
-    nb_contient +=1;
+    nb_continent +=1;
   }
 
   for(i=36; i<42; i++){
@@ -53,7 +53,7 @@ int nb_contient(int joueur, liste_territoires territoire){
     }
   }
   if(afrique==6){
-    nb_contient+=1;
+    nb_continent+=1;
   }
 
   for(i=0; i<9;i++){
@@ -71,7 +71,7 @@ int nb_contient(int joueur, liste_territoires territoire){
     }
   }
   if(europe==7){
-    nb_contient +=1;
+    nb_continent +=1;
   }
 
   for(i=20; i<33; i++){
@@ -80,7 +80,7 @@ int nb_contient(int joueur, liste_territoires territoire){
     }
   }
   if(asie==12){
-    nb_contient +=1;
+    nb_continent +=1;
   }
 
   return nb_continent;
