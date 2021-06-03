@@ -124,7 +124,7 @@ int calc_nb_troupe(int joueur, liste_territoires territoire, liste_voisin tla){
     }
   }
   if(amerique_sud==4){
-    nb_troupe +=2
+    nb_troupe +=2;
   }
 
   /*Si le joueur détient l'Afrique : +3 */
