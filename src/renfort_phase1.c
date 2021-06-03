@@ -8,6 +8,7 @@
 int calc_nb_territoire(int joueur, liste_territoires territoire){
   int i;
   int nb_territoire;
+  nb_territoire=0;
 
   for(i=0;i<NB_TERRITOIRE; i++){
     if(territoire[i].appartenance == joueur){
