@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <MLV/MLV_all.h>
+#include "coloriage.h"
 #include "graphisme.h"
 
 #define NB_TERRITOIRE 42
@@ -353,12 +354,80 @@ MLV_draw_text_with_font(
   MLV_COLOR_BLACK
 );
 
+  MLV_actualise_window();
+}
+
+// Actualisation du bandeau à droite
+void affichage_bandeau_droite(int terr1,
+                              int terr2,
+                              int cont1,
+                              int cont2,
+                              int trp1,
+                              int trp2,
+                              int tour
+                            ){
+  // Police de caractère
+  MLV_Font *font;
+
+  // On efface ce qui est présent
+  MLV_draw_filled_rectangle(800, 0, 200, 600, MLV_COLOR_BLACK);
+
+  font = MLV_load_font("./ressources/fonts/gunplay.ttf", 24);
+  MLV_draw_text_with_font(810, 20, "JOUEUR 1", font, MLV_COLOR_RED);
+
+  font = MLV_load_font("./ressources/fonts/gunplay.ttf", 18);
+  MLV_draw_text_with_font(820,50,"TERRITOIRES : %d",font,MLV_COLOR_RED,terr1);
+  MLV_draw_text_with_font(820,70,"CONTINENTS : ...",font,MLV_COLOR_RED,cont1);
+  MLV_draw_text_with_font(820,90,"TROUPES : 40",font,MLV_COLOR_RED,trp1);
 
 
+  font = MLV_load_font("./ressources/fonts/gunplay.ttf", 24);
+  MLV_draw_text_with_font(810, 350, "JOUEUR 2", font, MLV_COLOR_GREEN);
 
+  font = MLV_load_font("./ressources/fonts/gunplay.ttf", 18);
+  MLV_draw_text_with_font(820,380,"TERRITOIRES : %d",font,MLV_COLOR_GREEN,terr1);
+  MLV_draw_text_with_font(820,400,"CONTINENTS : ...",font,MLV_COLOR_GREEN,cont1);
+  MLV_draw_text_with_font(820,420,"TROUPES : 40", font, MLV_COLOR_GREEN,trp1);
 
+  if(tour == 0){
+    MLV_draw_text_with_font(840,500,"TOUR : J1",font,MLV_COLOR_ORANGE,terr1);
+  }
+  else{
+    MLV_draw_text_with_font(840,500,"TOUR : J2",font,MLV_COLOR_ORANGE,terr1);
+  }
 
-
+  // Libération de la police
+  MLV_free_font(font);
 
   MLV_actualise_window();
+}
+
+// Fonction d'initialisation du graphisme de début de partie
+void init_graphisme(){
+  // Création de la fenêtre
+  MLV_create_window("RISK", "RISK", 1000, 600);
+
+  int i;
+
+  // Arrière plan
+  MLV_Image *img = MLV_load_image("./ressources/img/world.png");
+  MLV_draw_image(img, 0, 0);
+
+  for(i = 0; i < 42; i++){
+    color_pays(i, 1);
+  }
+  MLV_actualise_window();
+  MLV_wait_seconds(2);
+
+  for(i = 0; i < 42; i++){
+    color_pays(i, 0);
+  }
+  MLV_actualise_window();
+  MLV_wait_seconds(2);
+
+  for(i = 0; i < 42; i++){
+    color_pays(i, -1);
+  }
+  MLV_actualise_window();
+  MLV_wait_seconds(2);
 }

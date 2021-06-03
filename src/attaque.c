@@ -63,12 +63,7 @@ void confrontation(int *nb_troupes_atq, int *nb_troupes_def){
     else{
       de_J2[1] = 0;
     }
-    if(*nb_troupes_def > 2){
-      de_J2[2] = rand()%6+1;
-    }
-    else{
-      de_J2[2] = 0;
-    }
+    de_J2[2] = 0;
 
     // On trie les listes de valeurs
     tri_tab_de(de_J1);
