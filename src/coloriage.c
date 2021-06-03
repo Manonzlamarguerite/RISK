@@ -10,12 +10,12 @@ void color_alaska(int color){
     MLV_draw_filled_rectangle(61, 89, 58, 30, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(31, 61, 88, 28, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(61, 89, 58, 30, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(31, 61, 88, 28, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(61, 89, 58, 30, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(31, 61, 88, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(61, 89, 58, 30, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -25,10 +25,10 @@ void color_amerique_nord(int color){
     MLV_draw_filled_rectangle(121, 61, 88, 28, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(121, 61, 88, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(121, 61, 88, 28, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(121, 61, 88, 28, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(121, 61, 88, 28, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -38,10 +38,10 @@ void color_alberta(int color){
     MLV_draw_filled_rectangle(121, 91, 58, 58, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(121, 91, 58, 58, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(121, 91, 58, 58, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(121, 91, 58, 58, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(121, 91, 58, 58, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -51,10 +51,10 @@ void color_ontario(int color){
     MLV_draw_filled_rectangle(181, 91, 58, 58, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(181, 91, 58, 58, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(181, 91, 58, 58, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(181, 91, 58, 58, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(181, 91, 58, 58, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -64,10 +64,10 @@ void color_quebec(int color){
     MLV_draw_filled_rectangle(241, 91, 58, 58, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(241, 91, 58, 58, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(241, 91, 58, 58, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(241, 91, 58, 58, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(241, 91, 58, 58, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -79,14 +79,14 @@ void color_amerique_est(int color){
     MLV_draw_filled_rectangle(151, 211, 30, 28, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(181, 151, 88, 88, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(269, 151, 30, 28, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(151, 211, 30, 28, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(181, 151, 88, 88, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(269, 151, 30, 28, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(151, 211, 30, 28, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(181, 151, 88, 88, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(269, 151, 30, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(151, 211, 30, 28, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -96,10 +96,10 @@ void color_amerique_ouest(int color){
     MLV_draw_filled_rectangle(91, 151, 88, 58, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(91, 151, 88, 58, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(91, 151, 88, 58, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(91, 151, 88, 58, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(91, 151, 88, 58, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -110,12 +110,12 @@ void color_amerique_centrale(int color){
     MLV_draw_filled_rectangle(121, 211, 28, 88, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(91, 211, 58, 28, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(121, 211, 28, 88, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(91, 211, 58, 28, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(121, 211, 28, 88, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(91, 211, 58, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(121, 211, 28, 88, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -126,12 +126,12 @@ void color_groenland(int color){
     MLV_draw_filled_rectangle(331, 59, 28, 30, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(301, 31, 58, 28, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(331, 59, 28, 30, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(301, 31, 58, 28, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(331, 59, 28, 30, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(301, 31, 58, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(331, 59, 28, 30, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -142,12 +142,12 @@ void color_venezuela(int color){
     MLV_draw_filled_rectangle(121, 301, 118, 28, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(121, 301, 28, 58, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(121, 301, 118, 28, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(121, 301, 28, 58, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(121, 301, 118, 28, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(121, 301, 28, 58, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(121, 301, 118, 28, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -158,12 +158,12 @@ void color_perou(int color){
     MLV_draw_filled_rectangle(91, 361, 58, 88, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(91, 331, 28, 30, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(91, 361, 58, 88, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(91, 331, 28, 30, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(91, 361, 58, 88, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(91, 331, 28, 30, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(91, 361, 58, 88, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -174,12 +174,12 @@ void color_bresil(int color){
     MLV_draw_filled_rectangle(181, 449, 58, 30, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(151, 331, 118, 118, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(181, 449, 58, 30, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(151, 331, 118, 118, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(181, 449, 58, 30, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(151, 331, 118, 118, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(181, 449, 58, 30, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -191,14 +191,14 @@ void color_argentine(int color){
     MLV_draw_filled_rectangle(151, 539, 28, 30, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(121, 451, 58, 88, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(179, 481, 31, 58, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(151, 539, 28, 30, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(121, 451, 58, 88, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(179, 481, 31, 58, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(151, 539, 28, 30, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(121, 451, 58, 88, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(179, 481, 31, 58, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(151, 539, 28, 30, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -208,10 +208,10 @@ void color_japon(int color){
     MLV_draw_filled_rectangle(751, 121, 28, 88, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(751, 121, 28, 88, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(751, 121, 28, 88, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(751, 121, 28, 88, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(751, 121, 28, 88, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -224,16 +224,16 @@ void color_kamtchatka(int color){
     MLV_draw_filled_rectangle(721, 31, 28, 30, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(691, 61, 58, 58, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(691, 119, 28, 30, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(721, 31, 58, 28, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(721, 31, 28, 30, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(691, 61, 58, 58, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(691, 119, 28, 30, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(721, 31, 58, 28, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(721, 31, 28, 30, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(691, 61, 58, 58, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(691, 119, 28, 30, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(721, 31, 58, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(721, 31, 28, 30, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -243,10 +243,10 @@ void color_tchita(int color){
     MLV_draw_filled_rectangle(631, 121, 58, 28, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(631, 121, 58, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(631, 121, 58, 28, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(631, 121, 58, 28, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(631, 121, 58, 28, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -256,10 +256,10 @@ void color_mongolie(int color){
     MLV_draw_filled_rectangle(631, 151, 88, 28, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(631, 151, 88, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(631, 151, 88, 28, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(631, 151, 88, 28, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(631, 151, 88, 28, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -269,10 +269,10 @@ void color_chine(int color){
     MLV_draw_filled_rectangle(601, 181, 118, 88, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(601, 181, 118, 88, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(601, 181, 118, 88, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(601, 181, 118, 88, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(601, 181, 118, 88, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -282,10 +282,10 @@ void color_syberie(int color){
     MLV_draw_filled_rectangle(601, 91, 28, 88, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(601, 91, 28, 88, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(601, 91, 28, 88, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(601, 91, 28, 88, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(601, 91, 28, 88, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -295,10 +295,10 @@ void color_oural(int color){
     MLV_draw_filled_rectangle(571, 91, 28, 118, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(571, 91, 28, 118, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(571, 91, 28, 118, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(571, 91, 28, 118, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(571, 91, 28, 118, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -309,12 +309,12 @@ void color_yakoutie(int color){
     MLV_draw_filled_rectangle(601, 61, 30, 28, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(631, 61, 58, 58, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(601, 61, 30, 28, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(631, 61, 58, 58, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(601, 61, 30, 28, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(631, 61, 58, 58, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(601, 61, 30, 28, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -325,12 +325,12 @@ void color_siam(int color){
     MLV_draw_filled_rectangle(631, 271, 28, 88, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(631, 271, 58, 28, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(631, 271, 28, 88, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(631, 271, 58, 28, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(631, 271, 28, 88, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(631, 271, 58, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(631, 271, 28, 88, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -340,10 +340,10 @@ void color_australie_est(int color){
     MLV_draw_filled_rectangle(691, 481, 58, 88, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(691, 481, 58, 88, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(691, 481, 58, 88, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(691, 481, 58, 88, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(691, 481, 58, 88, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -353,10 +353,10 @@ void color_australie_ouest(int color){
     MLV_draw_filled_rectangle(631, 481, 58, 88, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(631, 481, 58, 88, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(631, 481, 58, 88, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(631, 481, 58, 88, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(631, 481, 58, 88, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -366,10 +366,10 @@ void color_nouvelle_guinee(int color){
     MLV_draw_filled_rectangle(691, 421, 58, 28, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(691, 421, 58, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(691, 421, 58, 28, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(691, 421, 58, 28, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(691, 421, 58, 28, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -380,12 +380,12 @@ void color_indonesie(int color){
     MLV_draw_filled_rectangle(629, 421, 30, 28, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(601, 391, 28, 58, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(629, 421, 30, 28, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(601, 391, 28, 58, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(629, 421, 30, 28, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(601, 391, 28, 58, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(629, 421, 30, 28, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -395,10 +395,10 @@ void color_madagascar(int color){
     MLV_draw_filled_rectangle(541, 451, 28, 28, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(541, 451, 28, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(541, 451, 28, 28, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(541, 451, 28, 28, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(541, 451, 28, 28, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -409,12 +409,12 @@ void color_inde(int color){
     MLV_draw_filled_rectangle(571, 271, 28, 88, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(571, 271, 58, 58, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(571, 271, 28, 88, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(571, 271, 58, 58, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(571, 271, 28, 88, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(571, 271, 58, 58, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(571, 271, 28, 88, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -424,10 +424,10 @@ void color_islande(int color){
     MLV_draw_filled_rectangle(391, 60, 28, 28, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(391, 60, 28, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(391, 60, 28, 28, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(391, 60, 28, 28, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(391, 60, 28, 28, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -437,10 +437,10 @@ void color_grande_bretagne(int color){
     MLV_draw_filled_rectangle(421, 91, 28, 28, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(421, 91, 28, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(421, 91, 28, 28, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(421, 91, 28, 28, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(421, 91, 28, 28, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -450,10 +450,10 @@ void color_scandinavie(int color){
     MLV_draw_filled_rectangle(481, 91, 59, 28, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(481, 91, 59, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(481, 91, 59, 28, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(481, 91, 59, 28, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(481, 91, 59, 28, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -464,12 +464,12 @@ void color_europe_occidentale(int color){
     MLV_draw_filled_rectangle(391, 179, 28, 30, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(391, 151, 58, 28, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(391, 179, 28, 30, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(391, 151, 58, 28, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(391, 179, 28, 30, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(391, 151, 58, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(391, 179, 28, 30, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -479,10 +479,10 @@ void color_europe_du_nord(int color){
     MLV_draw_filled_rectangle(451, 151, 58, 28, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(451, 151, 58, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(451, 151, 58, 28, MLV_COLOR_ORANGE);
   }
   else{
-    MLV_draw_filled_rectangle(451, 151, 58, 28, MLV_COLOR_ORANGE);
+    MLV_draw_filled_rectangle(451, 151, 58, 28, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -494,14 +494,14 @@ void color_ukraine(int color){
     MLV_draw_filled_rectangle(540, 121, 2, 88, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(541, 91, 28, 118, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(511, 121, 29, 118, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(540, 121, 2, 88, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(541, 91, 28, 118, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(511, 121, 29, 118, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(540, 121, 2, 88, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(541, 91, 28, 118, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(511, 121, 29, 118, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(540, 121, 2, 88, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -512,12 +512,12 @@ void color_europe_du_sud(int color){
     MLV_draw_filled_rectangle(481, 209, 28, 30, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(451, 181, 58, 28, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(481, 209, 28, 30, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(451, 181, 58, 28, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(481, 209, 28, 30, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(451, 181, 58, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(481, 209, 28, 30, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -528,12 +528,12 @@ void color_afghanistan(int color){
     MLV_draw_filled_rectangle(571, 239, 28, 30, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(541, 211, 58, 28, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(571, 239, 28, 30, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(541, 211, 58, 28, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(571, 239, 28, 30, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(541, 211, 58, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(571, 239, 28, 30, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -545,14 +545,14 @@ void color_moyen_orient(int color){
     MLV_draw_filled_rectangle(541, 299, 28, 30, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(481, 241, 88, 28, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(511, 269, 58, 30, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(541, 299, 28, 30, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(481, 241, 88, 28, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(511, 269, 58, 30, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(541, 299, 28, 30, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(481, 241, 88, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(511, 269, 58, 30, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(541, 299, 28, 30, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -563,12 +563,12 @@ void color_afrique_du_sud(int color){
       MLV_draw_filled_rectangle(421, 480, 58, 59, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(391, 421, 118, 59, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(421, 480, 58, 59, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(391, 421, 118, 59, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(421, 480, 58, 59, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(391, 421, 118, 59, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(421, 480, 58, 59, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -581,16 +581,16 @@ void color_afrique_de_l_est(int color){
     MLV_draw_filled_rectangle(421, 359, 88, 5, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(391, 301, 88, 32, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(391, 331, 118, 28, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(421, 361, 118, 58, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(421, 359, 88, 5, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(391, 301, 88, 32, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(391, 331, 118, 28, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(421, 361, 118, 58, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(421, 359, 88, 5, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(391, 301, 88, 32, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(391, 331, 118, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(421, 361, 118, 58, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(421, 359, 88, 5, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -602,14 +602,14 @@ void color_afrique_du_nord(int color){
     MLV_draw_filled_rectangle(301, 299, 88, 60, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(331, 241, 58, 30, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(301, 271, 118, 28, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(301, 299, 88, 60, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(331, 241, 58, 30, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(301, 271, 118, 28, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(301, 299, 88, 60, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(331, 241, 58, 30, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(301, 271, 118, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(301, 299, 88, 60, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -620,12 +620,12 @@ void color_congo(int color){
       MLV_draw_filled_rectangle(391, 389, 28, 30, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(331, 361, 88, 28, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(391, 389, 28, 30, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(331, 361, 88, 28, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(391, 389, 28, 30, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(331, 361, 88, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(391, 389, 28, 30, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
@@ -636,12 +636,12 @@ void color_egypte(int color){
     MLV_draw_filled_rectangle(421, 269, 58, 30, MLV_COLOR_RED);
   }
   else if(color == 0){
-    MLV_draw_filled_rectangle(391, 241, 88, 28, MLV_COLOR_GREEN);
-    MLV_draw_filled_rectangle(421, 269, 58, 30, MLV_COLOR_GREEN);
-  }
-  else{
     MLV_draw_filled_rectangle(391, 241, 88, 28, MLV_COLOR_ORANGE);
     MLV_draw_filled_rectangle(421, 269, 58, 30, MLV_COLOR_ORANGE);
+  }
+  else{
+    MLV_draw_filled_rectangle(391, 241, 88, 28, MLV_COLOR_GREEN);
+    MLV_draw_filled_rectangle(421, 269, 58, 30, MLV_COLOR_GREEN);
   }
   MLV_actualise_window();
 }
