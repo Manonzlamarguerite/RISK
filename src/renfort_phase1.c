@@ -232,7 +232,7 @@ int clic_territoire_renforce(int joueur, liste_territoires territoire,liste_vois
 
   printf("%d\n",nb_ajouter);
   printf("%d\n",nb_troupe );
-  if(nb_troupe>nb_ajouter){
+  if(nb_troupe>=nb_ajouter){
     territoire[pays].nb_regiment += nb_ajouter;
     nb_troupe -= nb_ajouter;
     color_pays(pays, joueur);
@@ -273,7 +273,7 @@ void phase1(int joueur, liste_territoires territoire, liste_voisin tla){
   nb_troupe = calc_nb_troupe(joueur, territoire, tla);
   font = MLV_load_font("./ressources/fonts/gunplay.ttf", 12);
 
-  while(nb_troupe!=0){
+  while(nb_troupe>=0){
     MLV_draw_text_with_font(
       810,150,
       "Nombre de troupe disponible : %d",
