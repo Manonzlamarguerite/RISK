@@ -9,6 +9,7 @@
 #include "liste.h"
 #include "attaque.h"
 #include "graphisme.h"
+#include "renfort_phase1.h"
 
 void jeu(){
 
@@ -20,9 +21,12 @@ void jeu(){
   int troupes1 = 40;    // Troupes du J1
   int troupes2 = 40;    // Troupes du J2
   int terr1 = 21;       // Territoires du J1
-  int terr2 = 21        // Territoires du J2
+  int terr2 = 21;       // Territoires du J2
   int win = 0;          // Variable de fin de jeu
-  int i, cont1, cont1;
+  int i, cont1, cont2;
+
+  // Création de la fenêtre
+  MLV_create_window("RISK", "RISK", 1000, 600);
 
   // Tant qu'aucun n'a gagné
   while(!win){
@@ -30,8 +34,8 @@ void jeu(){
     init_graphisme();
 
     // On regarde le nombre de continent
-    nb_cont_J1 = nb_continent(1, global_terr);
-    nb_cont_J1 = nb_continent(2, global_terr);
+    cont1 = nb_continent(1, global_terr);
+    cont2 = nb_continent(2, global_terr);
 
     // On colorie les territoires
     for(i = 0; i < 42; i++){
@@ -60,5 +64,7 @@ void jeu(){
     //###################################
 
     MLV_wait_mouse(NULL, NULL);
+
+    tour = (tour+1)%2;    // Tour suivant
   }
 }

@@ -405,9 +405,6 @@ void affichage_bandeau_droite(int terr1,
 
 // Fonction d'initialisation du graphisme de début de partie
 void init_graphisme(){
-  // Création de la fenêtre
-  MLV_create_window("RISK", "RISK", 1000, 600);
-
   // Arrière plan
   MLV_Image *img = MLV_load_image("./ressources/img/world.png");
   MLV_draw_image(img, 0, 0);
