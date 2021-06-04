@@ -7,7 +7,7 @@
 #include "liste.h"
 #include "clic.h"
 
-void valeur_troupe_transvasees(int joueur, liste_territoires territoire, liste_voisin tla, int pays1, int pays2){
+int valeur_troupe_transvasees(int joueur, liste_territoires territoire, liste_voisin tla, int pays1, int pays2){
   int nb_troupe_trans,nb_troupe1;
   char *nb_troupe_trans_c;
   MLV_Font *font;
@@ -51,7 +51,7 @@ void valeur_troupe_transvasees(int joueur, liste_territoires territoire, liste_v
       color_pays(pays2, joueur);
       affichage_troupe(tla,territoire);
       MLV_actualise_window();
-
+      return 0;
     }
   }
 
