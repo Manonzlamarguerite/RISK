@@ -1,8 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <MLV/MLV_all.h>
 #include "renfort_phase1.h"
 #include "liste.h"
 #include "tla.h"
+#include"clic.h"
+#include "coloriage.h"
+#include"graphisme.h"
 #define NB_TERRITOIRE 42
 
 int calc_nb_territoire(int joueur, liste_territoires territoire){
@@ -168,4 +172,116 @@ int calc_nb_troupe(int joueur, liste_territoires territoire, liste_voisin tla){
   }
 
   return nb_troupe;
+}
+
+int clic_territoire_renforce(int joueur, liste_territoires territoire,liste_voisin tla, int nb_troupe){
+  int pays, nb_ajouter;
+  char* nb_ajouter_c;
+  MLV_Font *font;
+  pays=saisir_pays();
+  nb_ajouter=-1;
+  font = MLV_load_font("./ressources/fonts/gunplay.ttf", 18);
+
+
+  MLV_draw_filled_rectangle(
+    810,200,
+    200,50,
+    MLV_COLOR_BLACK
+  );
+  MLV_actualise_window();
+  /*On vérifie que le joueur a cliqué sur un de ses territoire à lui*/
+  if(territoire[pays].appartenance!=joueur){
+    return nb_troupe; /*On sort de la fonction*/
+  }
+
+  /*On selectionne donc le pays*/
+  color_pays(pays, 0);
+  affichage_troupe(tla, territoire);
+
+  /*On fait apparaitre une zone input dans la fenetre et on saisie l'entrée*/
+  MLV_draw_text_with_font(
+    810, 200,
+    "Ajouter .. troupe(s)",
+    font,
+    MLV_COLOR_WHITE
+  );
+
+  MLV_actualise_window();
+
+  while(nb_ajouter == -1 ){
+    MLV_wait_input_box(
+      810, 220,
+      150, 50,
+      MLV_COLOR_BLACK,
+      MLV_COLOR_BLACK,
+      MLV_COLOR_WHITE,
+      "... : ",
+      &nb_ajouter_c
+    );
+
+    MLV_draw_text_with_font(
+      900, 365,
+      nb_ajouter_c,
+      font,
+      MLV_COLOR_BLACK
+    );
+
+
+  /*On met à jour le nombre de troupe*/
+  nb_ajouter=atoi(nb_ajouter_c);
+
+  printf("%d\n",nb_ajouter);
+  printf("%d\n",nb_troupe );
+  if(nb_troupe>nb_ajouter){
+    territoire[pays].nb_regiment += nb_ajouter;
+    nb_troupe -= nb_ajouter;
+    color_pays(pays, joueur);
+    affichage_troupe(tla, territoire);
+    MLV_draw_filled_rectangle(
+      810,200,
+      200,50,
+      MLV_COLOR_BLACK
+    );
+
+    MLV_actualise_window();
+  }
+  else{
+    color_pays(pays,joueur);
+    affichage_troupe(tla,territoire);
+    MLV_draw_filled_rectangle(
+      810,200,
+      200,50,
+      MLV_COLOR_BLACK
+    );
+    MLV_draw_text_with_font(
+      810,200,
+      "Nombre invalide",
+      font,
+      MLV_COLOR_WHITE
+    );
+    MLV_actualise_window();
+  }
+
+  }
+
+  return nb_troupe;
+}
+
+void phase1(int joueur, liste_territoires territoire, liste_voisin tla){
+  int nb_troupe;
+  MLV_Font *font;
+  nb_troupe = calc_nb_troupe(joueur, territoire, tla);
+  font = MLV_load_font("./ressources/fonts/gunplay.ttf", 12);
+
+  while(nb_troupe!=0){
+    MLV_draw_text_with_font(
+      810,150,
+      "Nombre de troupe disponible : %d",
+      font,
+      MLV_COLOR_WHITE,
+      nb_troupe
+    );
+    MLV_actualise_window();
+    nb_troupe=clic_territoire_renforce(joueur, territoire, tla, nb_troupe);
+  }
 }
