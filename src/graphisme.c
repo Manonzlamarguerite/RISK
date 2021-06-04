@@ -377,8 +377,8 @@ void affichage_bandeau_droite(int terr1,
 
   font = MLV_load_font("./ressources/fonts/gunplay.ttf", 18);
   MLV_draw_text_with_font(820,50,"TERRITOIRES : %d",font,MLV_COLOR_RED,terr1);
-  MLV_draw_text_with_font(820,70,"CONTINENTS : ...",font,MLV_COLOR_RED,cont1);
-  MLV_draw_text_with_font(820,90,"TROUPES : 40",font,MLV_COLOR_RED,trp1);
+  MLV_draw_text_with_font(820,70,"CONTINENTS : %d",font,MLV_COLOR_RED,cont1);
+  MLV_draw_text_with_font(820,90,"TROUPES : %d",font,MLV_COLOR_RED,trp1);
 
 
   font = MLV_load_font("./ressources/fonts/gunplay.ttf", 24);
@@ -386,15 +386,15 @@ void affichage_bandeau_droite(int terr1,
 
   font = MLV_load_font("./ressources/fonts/gunplay.ttf", 18);
   MLV_draw_text_with_font(820,380,"TERRITOIRES : %d",font,MLV_COLOR_GREEN,terr1);
-  MLV_draw_text_with_font(820,400,"CONTINENTS : ...",font,MLV_COLOR_GREEN,cont1);
-  MLV_draw_text_with_font(820,420,"TROUPES : 40", font, MLV_COLOR_GREEN,trp1);
+  MLV_draw_text_with_font(820,400,"CONTINENTS : %d",font,MLV_COLOR_GREEN,cont1);
+  MLV_draw_text_with_font(820,420,"TROUPES : %d", font, MLV_COLOR_GREEN,trp1);
 
   font = MLV_load_font("./ressources/fonts/gunplay.ttf", 24);
   if(tour == 0){
-    MLV_draw_text_with_font(840,500,"TOUR : J1",font,MLV_COLOR_ORANGE,terr1);
+    MLV_draw_text_with_font(840,460,"TOUR : J1",font,MLV_COLOR_ORANGE,terr1);
   }
   else{
-    MLV_draw_text_with_font(840,500,"TOUR : J2",font,MLV_COLOR_ORANGE,terr1);
+    MLV_draw_text_with_font(840,460,"TOUR : J2",font,MLV_COLOR_ORANGE,terr1);
   }
 
   // Libération de la police

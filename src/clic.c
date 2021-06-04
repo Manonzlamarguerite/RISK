@@ -264,5 +264,9 @@ int saisir_pays(){
     return 41;
   }
 
+  if(850 < x && x < 950 && 520 < y && y < 560){
+    return -2;
+  }
+
   return -1;
 }

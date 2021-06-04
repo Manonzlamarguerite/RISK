@@ -6,6 +6,7 @@
 #include "tla.h"
 #include "liste.h"
 #include "clic.h"
+#include "graphisme.h"
 
 int valeur_troupe_transvasees(int joueur, liste_territoires territoire, liste_voisin tla, int pays1, int pays2){
   int nb_troupe_trans,nb_troupe1;
@@ -15,7 +16,7 @@ int valeur_troupe_transvasees(int joueur, liste_territoires territoire, liste_vo
   nb_troupe1=territoire[pays1].nb_regiment;
   font = MLV_load_font("./ressources/fonts/gunplay.ttf", 16);
 
-  while(nb_troupe_trans=-1){
+  while(nb_troupe_trans == -1){
 
     MLV_draw_text_with_font(
       810,200,
@@ -50,11 +51,12 @@ int valeur_troupe_transvasees(int joueur, liste_territoires territoire, liste_vo
       color_pays(pays1, joueur);
       color_pays(pays2, joueur);
       affichage_troupe(tla,territoire);
+      MLV_draw_filled_rectangle(800, 150, 200, 150, MLV_COLOR_BLACK);
       MLV_actualise_window();
       return 0;
     }
   }
-
+  return 0;
 }
 
 void phase3(int joueur, liste_territoires territoire, liste_voisin tla){

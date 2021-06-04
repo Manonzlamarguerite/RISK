@@ -273,7 +273,7 @@ void phase1(int joueur, liste_territoires territoire, liste_voisin tla){
   nb_troupe = calc_nb_troupe(joueur, territoire, tla);
   font = MLV_load_font("./ressources/fonts/gunplay.ttf", 12);
 
-  while(nb_troupe>=0){
+  while(nb_troupe > 0){
     MLV_draw_text_with_font(
       810,150,
       "Nombre de troupe disponible : %d",
@@ -284,4 +284,7 @@ void phase1(int joueur, liste_territoires territoire, liste_voisin tla){
     MLV_actualise_window();
     nb_troupe=clic_territoire_renforce(joueur, territoire, tla, nb_troupe);
   }
+
+  MLV_draw_filled_rectangle(800, 150, 200, 150, MLV_COLOR_BLACK);
+  MLV_actualise_window();
 }
